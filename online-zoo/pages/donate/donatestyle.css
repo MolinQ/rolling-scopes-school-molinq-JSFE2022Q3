@@ -27,6 +27,10 @@ main {
     margin-top: -2.4%;
 }
 
+.footer__wrapper2 {
+    display: none;
+}
+
 /* header */
 nav {
     margin-right: 13%;
