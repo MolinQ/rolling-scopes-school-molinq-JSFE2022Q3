@@ -18,6 +18,9 @@ body {
 
 
 }
+.footer2__social {
+    display: none;
+}
 
 main {
     margin-bottom: 8%;
