@@ -1,6 +1,6 @@
 html {
     font-family: 'Roboto';
-    transition: all 0.3s;
+    transition: all 0.8s;
     max-width: 1600px;
 }
 
@@ -21,6 +21,13 @@ body {
     padding: 0;
 
 }
+.cheetahs {
+    display: none;
+}
+.gorila__bottom {
+    display: none;
+}
+
 #burger__icon {
     display: none;
 }
@@ -140,6 +147,18 @@ nav {
     background-size: cover;
 }
 
+.Alligators:hover img {
+    /* transform: scale(1.08); */
+    filter: contrast(15%);
+}
+.Alligators:hover .Pets__icon {
+    display: none;
+}
+.Alligators:hover .about__pet {
+    color: black;
+    transform: translateY(-300%);
+    transition: all 0.3s;
+}
 
 .nav__li {
     color: white;
@@ -151,6 +170,7 @@ nav {
 .nav__li li:hover {
     color: #fa833f
 }
+
 
 .nav__li {
     padding-right: 1%;
@@ -1241,6 +1261,24 @@ nav {
 /* media */
 
 @media (max-width: 1000px) {
+    .cheetahs {
+        display: block;
+    }
+    .gorila__bottom {
+        display: block;
+        width: 29vw;
+    }
+    .firs__line {
+        transition: all 0.8s;
+
+    }
+    .second__line {
+        gap: 3%;
+        width: 133vw;
+        transition: all 0.8s;
+
+    }
+    
     .bottom__footer {
         padding-bottom: 2%;
     }
@@ -1332,7 +1370,7 @@ nav {
 
     .firs__line {
         margin-bottom: 3vw;
-
+        width: 133vw;
     }
 
     .Backstage__text {
@@ -1631,6 +1669,7 @@ nav {
         display: none;
     }
 
+
     .footer__top2 img {
         height: 8vw;
         width: 13vw;
@@ -1783,20 +1822,24 @@ nav {
     }
 
     /* pets None */
-    .gorila {
-        display: none;
-    }
-    .Alligators {
-        display: none;
-    }
-    
-    .gorila__bottom {
-        display: none;
-    }
-
-    .Penguins {
-        display: none;
-    }
+   
+.Alligators {
+    width: 44vw;
+}
+.gorila {
+    width: 44vw;
+    height: 51.3vw;
+}
+.Penguins {
+    width: 44vw;
+}
+.gorila__bottom {
+    width: 44vw;
+}
+.firs__line {
+    width: 206vw;
+    position: relative;
+}
 
     .Pets {
         margin-top: 6.3%;
@@ -1839,7 +1882,11 @@ nav {
         gap: 5%;
     }
 
-    .second__line {}
+    .second__line {
+        width: 206vw;
+        gap: 4%;
+}
+    
 
     .Two_toed_Sloth {
         width: 44vw;
@@ -2091,6 +2138,20 @@ nav {
 }
 
 @media (max-width: 320px) {
+   .gorila__bottom {
+    display:none;
+   }
+   .Penguins {
+    display: none;
+   }
+   .Alligators {
+    display: none;
+   }
+   
+   .gorila {
+    display: none;
+   }
+   
     .hamburger img {
         width: 6vw;
         padding-top: 1.5vw;
@@ -2316,14 +2377,14 @@ nav {
         display: block;
         position: absolute;
         right: 13vw;
-        bottom: -685vw;
+        bottom: -648vw;
     }
 
     .second__bot__arr {
         display: block;
         position: absolute;
         right: 13vw;
-        bottom: -763vw;
+        bottom: -728vw;
     }
 
     .how__works__wrapper {
