@@ -32,6 +32,7 @@ function move(index) {
   cell.top = emptyTop
 
   const isFinished = cells.every(cell => {
+    console.log(cell.value,cell.top,cell.left)
    return cell.value === cell.top * 4 + cell.left
   })
   if (isFinished) {
@@ -42,7 +43,7 @@ function move(index) {
 
 
 const numbers = [...Array(15).keys()]
-//.sort(() => Math.random()- 0.5)
+.sort(() => Math.random()- 0.5)
 for (let i = 1; i <= 15; i++) {
  
   const cell = document.createElement('div')
